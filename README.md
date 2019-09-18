@@ -1,2 +1,2 @@
-# OracleLabs
+# Oracle Labs
 OracleLabs
