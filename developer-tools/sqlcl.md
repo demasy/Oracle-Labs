@@ -1,5 +1,15 @@
-# Using Oracle SQLcl
+# Oracle SQLcl
 
+<br>
+
+## SQLcl Downloads
+https://www.oracle.com/tools/downloads/sqlcl-downloads.html
+
+<br>
+
+## Using Oracle SQLcl
+
+<br>
 
 ```
 sudo java --version
