@@ -1,4 +1,4 @@
-# Oracle Labs | By Ahmed El-Demasy
+# Oracle Labs
 What would you like to learn today ?
 
 
