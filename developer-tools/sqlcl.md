@@ -36,3 +36,9 @@ cd /<$FILE_PATH>/sqlcl/bin
 ```
 clear screen
 ```
+
+```
+help
+```
+
+
