@@ -20,14 +20,26 @@ The Generic Loader is a concurrent program named FNDLOAD. The concurrent executa
 > 
 This is my recommended naming conventions for the data file name.
 
- | SEQ       | Type        | Name     | Length | Prefix | Suffix | Example |
- | :-:       | :----------        |    :----          | :-:    | :---   | :---   | :----   |
- | 1         | **XXX**      |              | -     |  -      |  -      | -|
- | 2         | Program         | XXDL_CONCURRENT_PROGRAM           | -     |  prog_      |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
- | 3         | Request Groups         | XXDL_REPORT_GROUP           | -     |  alr_      |   -     | reqg_XXDL_REPORT_GROUP.ldt |
- | 4         | Alert         | XXDL_ALERT_NAME           | -     |  alr_      |   -     | alr_XXDL_ALERT_NAME.ldt |
- 
- 
+ | SEQ       | Type                   | Name                           | Prefix | Suffix | Example |
+ | :-:       | :----------            | :----                          | :---   | :---   | :----   |
+ |           | **Concurrent Program**                                  | -      |  -      |  -      | -|
+ | 2         | Program                | XXDL_CONCURRENT_PROGRAM        | prog_  |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
+ | 3         | Request Groups         | XXDL_REPORT_GROUP              | rg_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Request Set & Link     | XXDL_REPORT_GROUP              | rs_    |   -     | reqg_XXDL_REPORT_GROUP.ldt | 
+ | 3         | Lookups                | XXDL_REPORT_GROUP              | lu_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Messages               | XXDL_REPORT_GROUP              | msg_   |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Menus                  | XXDL_REPORT_GROUP              | mu_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ |           | **Flexfields Setup**   | -                              | -      |   -     | - |
+ | 3         | Value Set              | XXDL_REPORT_GROUP              | vs_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Descriptive flexfields | XXDL_REPORT_GROUP              | df_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Key flexfields         | XXDL_REPORT_GROUP              | kf_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Profile                | XXDL_REPORT_GROUP              | pf_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Profile Value          | XXDL_REPORT_GROUP              | pv_    |   -     | reqg_XXDL_REPORT_GROUP.ldt | 
+ | 4         | Alert                  | XXDL_ALERT_NAME                | alr_   |   -     | alr_XXDL_ALERT_NAME.ldt |
+ | 3         | Definition & Associated Template | XXDL_REPORT_GROUP    | ddt_   |   -     | reqg_XXDL_REPORT_GROUP.ldt | 
+ | 3         | Data Template - Data Source XML File | XXDL_REPORT_GROUP| dtds_  |   -     | reqg_XXDL_REPORT_GROUP.ldt |  
+ | 3         | Users                  | XXDL_DEMASY_LABS               | u_     |   -     | u_DEMASY_LABS.ldt |
+ | 3         | Workflow               | XXDLWF                         | wf_    |   -     | wf_XXDLWF.wft |  
  
  <br>
 
