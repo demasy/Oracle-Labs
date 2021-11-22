@@ -59,6 +59,14 @@ This is my recommended naming conventions for the data file name.
 | EXECUTABLE  |          -           | 1    |EXECUTABLE_NAME    |
 
 
+<br>
+ 
+## Request Groups
+| Entity      | Sub-entities, if any |  #   | Download Parameters   |
+| :----       | :--------            | :--: | :----   |
+| REQUEST_GROUP  |          REQUEST_GROUP_ UNIT           | 1    |REQUEST_GROUP_UNIT    |
+|   |                    | 2    |REQUEST_GROUP_NAME    |
+
 
 <br>
  
@@ -107,12 +115,6 @@ This is my recommended naming conventions for the data file name.
 | XXXXXXXXXXX         | XXXXXXXXXXX                   | XXXXXXXXXXX    |
 
 
-<br>
- 
-## Request Groups
-| Entity      | Sub-entities, if any                           | Download Parameters   |
-| :----      | :--------                         | :----   |
-| XXXXXXXXXXX         | XXXXXXXXXXX                   | XXXXXXXXXXX    |
 
 <br>
  
