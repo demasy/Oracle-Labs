@@ -4,10 +4,18 @@ The Generic Loader (FNDLOAD) is a concurrent program that can move Oracle E-Busi
 
 <br>
 
-## FNDLOAD Scripts
+
+## FNDLOAD Syntax 
+> **FNDLOAD apps/{APPS_PASSWORD} 0 Y  {mode} {configfile} {datafile} {entity} [optional {param} {param}]**
+
+<br>
+
+## Naming Conventions
 
 ##### FNDLOAD Syntax 
 > **FNDLOAD apps/{APPS_PASSWORD} 0 Y  {mode} {configfile} {datafile} {entity} [optional {param} {param}]**
+> 
+This is my recommended naming conventions for the data file name.
 
  | SEQ       | Type        | Name     | Length | Prefix | Suffix | Example |
  | :-        | :----        |    :----          | :-:    | :---   | :---   | :----   |
