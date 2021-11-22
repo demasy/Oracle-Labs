@@ -22,13 +22,15 @@ This is my recommended naming conventions for the data file name.
 
  | SEQ       | Type                   | Name                           | Prefix | Suffix | Example |
  | :-:       | :----------            | :----                          | :---   | :---   | :----   |
+ | 1         | Responsibility         | XXDL_RESPONSIBILITY_NAME       | resp_  |   -     | resp_XXDL_RESPONSIBILITY_NAME.ldt |
+ | 2         | Menu                   | XXDL_REPORT_GROUP              | mu_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 3         | Function               | XXDL_REPORT_GROUP              | func_  |   -     | reqg_XXDL_REPORT_GROUP.ldt |  
  |           | **Concurrent Program**                                  | -      |  -      |  -      | -|
  | 2         | Program                | XXDL_CONCURRENT_PROGRAM        | prog_  |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
  | 3         | Request Groups         | XXDL_REPORT_GROUP              | rg_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
  | 3         | Request Set & Link     | XXDL_REPORT_GROUP              | rs_    |   -     | reqg_XXDL_REPORT_GROUP.ldt | 
  | 3         | Lookups                | XXDL_REPORT_GROUP              | lu_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
  | 3         | Messages               | XXDL_REPORT_GROUP              | msg_   |   -     | reqg_XXDL_REPORT_GROUP.ldt |
- | 3         | Menus                  | XXDL_REPORT_GROUP              | mu_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
  |           | **Flexfields Setup**   | -                              | -      |   -     | - |
  | 3         | Value Set              | XXDL_REPORT_GROUP              | vs_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
  | 3         | Descriptive flexfields | XXDL_REPORT_GROUP              | df_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
