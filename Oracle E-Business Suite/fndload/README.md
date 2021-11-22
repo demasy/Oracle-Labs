@@ -21,7 +21,7 @@ The Generic Loader is a concurrent program named FNDLOAD. The concurrent executa
 This is my recommended naming conventions for the data file name.
 
  | SEQ       | Type        | Name     | Length | Prefix | Suffix | Example |
- | :-:       | :----        |    :----          | :-:    | :---   | :---   | :----   |
+ | :-:       | :----------        |    :----          | :-:    | :---   | :---   | :----   |
  | 1         | **XXX**      |              | -     |  -      |  -      | -|
  | 2         | Program         | XXDL_CONCURRENT_PROGRAM           | -     |  prog_      |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
  | 3         | Request Groups         | XXDL_REPORT_GROUP           | -     |  alr_      |   -     | reqg_XXDL_REPORT_GROUP.ldt |
@@ -31,9 +31,10 @@ This is my recommended naming conventions for the data file name.
  
  <br>
 
-## **Oracle Application Object Library** 
-| Code      | FNDLOAD                           | Notes   |
+## **FNDLOAD Entities** 
+| Code      | Entity Name                           | Notes   |
 | :-:       | :--------                         | :--------------------------   |
+| 1         | **Oracle Application Object Library**                   | -       |
 | 1         | Concurrent program definitions                   | -       |
 | 2         | Request groups                    | -       |
 | 3         | Lookup types and lookup values                  | -       |
@@ -101,6 +102,31 @@ FNDLOAD apps/<$APPS_PWD> O Y UPLOAD $FND_TOP/patch/115/import/afcpreqg.lct reqg_
 
 <br>
  
+## Lookups
+| Entity           | Sub-entities, if any |  #   | Download Parameters   |
+| :----            | :--------            | :--: | :----   |
+| FND_LOOKUP_TYPE  |         FND_LOOKUP_VALUE           | 1    | 	VIEW_APPSNAME LOOKUP_TYPE    |
+|                  |                                    | 2    |SECURITY_GROUP    |
+
+<br>
+
+### Example
+
+
+###### Download 
+
+```
+FNDLOAD apps/<$APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/aflvmlu.lct lu_XXDL_LOOKUP_TYPE.ldt FND_LOOKUP_TYPE APPLICATION_SHORT_NAME="XXDL" LOOKUP_TYPE="XXDL_LOOKUP_TYPE"
+```
+
+###### Upload
+
+```
+FNDLOAD apps/<$APPS_PWD> O Y UPLOAD $FND_TOP/patch/115/import/aflvmlu.lct lu_XXDL_LOOKUP_TYPE.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+```
+
+<br>
+ 
 ## Attachments Setup Data
 | Entity      | Sub-entities, if any                           | Download Parameters   |
 | :----      | :--------                         | :----   |
@@ -123,12 +149,6 @@ FNDLOAD apps/<$APPS_PWD> O Y UPLOAD $FND_TOP/patch/115/import/afcpreqg.lct reqg_
 | XXXXXXXXXXX         | XXXXXXXXXXX                   | XXXXXXXXXXX    |
  
 
-<br>
- 
-## Lookups
-| Entity      | Sub-entities, if any                           | Download Parameters   |
-| :----      | :--------                         | :----   |
-| XXXXXXXXXXX         | XXXXXXXXXXX                   | XXXXXXXXXXX    |
 
 <br>
  
@@ -298,18 +318,6 @@ ORDER BY application_table_name
 
 > $FND_TOP/bin/FNDLOAD apps/<APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afsload.lct XXCUST_FORM.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
-<br>
-
-## FNDLOAD Lookup
-
-
-###### Download 
-
-> FNDLOAD apps/<APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/aflvmlu.lct XXCUST_LOOKUP.ldt FND_LOOKUP_TYPE APPLICATION_SHORT_NAME="XXCUST" LOOKUP_TYPE="XXCUST_LOOKUP_TYPE"
-
-###### Upload
-
-> FNDLOAD apps/<APPS_PWD> O Y UPLOAD $FND_TOP/patch/115/import/aflvmlu.lct XXCUST_LOOKUP.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
 <br>
 
