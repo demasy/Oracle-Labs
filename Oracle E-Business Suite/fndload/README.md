@@ -23,8 +23,8 @@ This is my recommended naming conventions for the data file name.
  | SEQ       | Type                   | Name                           | Prefix | Suffix | Example |
  | :-:       | :----------            | :----                          | :---   | :---   | :----   |
  | 1         | Responsibility         | XXDL_RESPONSIBILITY_NAME       | resp_  |   -     | resp_XXDL_RESPONSIBILITY_NAME.ldt |
- | 2         | Menu                   | XXDL_REPORT_GROUP              | mu_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
- | 3         | Function               | XXDL_REPORT_GROUP              | func_  |   -     | reqg_XXDL_REPORT_GROUP.ldt |  
+ | 2         | Menu                   | XXDL_MENU_NAME                 | mu_    |   -     | mu_XXDL_MENU_NAME.ldt |
+ | 3         | Function               | XXDL_FUNCTION_NAME             | func_  |   -     | func_XXDL_FUNCTION_NAME.ldt |  
  |           | **Concurrent Program**                                  | -      |  -      |  -      | -|
  | 2         | Program                | XXDL_CONCURRENT_PROGRAM        | prog_  |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
  | 3         | Request Groups         | XXDL_REPORT_GROUP              | rg_    |   -     | reqg_XXDL_REPORT_GROUP.ldt |
