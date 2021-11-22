@@ -4,6 +4,16 @@ The Generic Loader (FNDLOAD) is a concurrent program that can move Oracle E-Busi
 
 <br>
 
+## **FNDLOAD**
+
+| Code      | FNDLOAD                           | Notes   |
+| :-:       | :--------                         | :----   |
+| 1         | Alert                   | -       |
+| 2         | Profile Option                   | -       |
+
+<br> 
+
+
 ## FNDLOAD Alerts
  
 ###### Download  
@@ -16,6 +26,22 @@ FNDLOAD apps/<$APPS_PWD> 0 Y DOWNLOAD $ALR_TOP/patch/115/import/alr.lct alr_XXDL
  
 ```
 FNDLOAD apps/<$APPS_PWD> 0 Y UPLOAD $ALR_TOP/patch/115/import/alr.lct alr_XXDL_ALERT_NAME.ldt CUSTOM_MODE=FORCE
+```
+
+<br>
+
+## FNDLOAD Profile
+
+###### Download 
+
+```
+FNDLOAD apps/<$APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/afscprof.lct prof_XXDL_PROFILE_OPTION.ldt PROFILE PROFILE_NAME="XXDL_PROFILE_OPTION" APPLICATION_SHORT_NAME="XXDL"
+```
+
+###### Upload
+
+```
+$FND_TOP/bin/FNDLOAD apps/<$APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afscprof.lct prof_XXDL_PROFILE_OPTION.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 ```
 
 <br>
@@ -185,16 +211,6 @@ All Messages On Application
 > FNDLOAD apps/<APPS_PWD> O Y UPLOAD $FND_TOP/patch/115/import/afmdmsg.lct XXCUST_MSG.ldt UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
 <br>
-
-## FNDLOAD Profile
-
-###### Download 
-
-> FNDLOAD apps/<APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/afscprof.lct XXCUST_PROFILE_OPTION.ldt PROFILE PROFILE_NAME="XXCUST_PROFILE_OPTION" APPLICATION_SHORT_NAME="XXCUST"
-
-###### Upload
-
-> $FND_TOP/bin/FNDLOAD apps/<APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afscprof.lct XXCUST_PROFILE_OPTION.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
 ###### SQL Validate
 
