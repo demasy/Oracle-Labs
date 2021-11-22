@@ -297,6 +297,7 @@ WHERE user_request_set_name = 'XXCUSTOM_REQUEST_SET_NAME'
 > $FND_TOP/bin/FNDLOAD apps/<APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afffload.lct XXCUST_VALUE_SET.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 
 
+<br>
 
 ### FNDLOAD Workflow
 
