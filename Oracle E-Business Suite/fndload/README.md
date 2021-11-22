@@ -60,6 +60,22 @@ This is my recommended naming conventions for the data file name.
 
 
 <br>
+
+### Example
+
+###### Download 
+
+```
+FNDLOAD apps/<$APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct prog_XXDL_CONCURRENT_PROGRAM.ldt PROGRAM APPLICATION_SHORT_NAME="XXDL" CONCURRENT_PROGRAM_NAME="XXDL_CONCURRENT_PROGRAM"
+```
+
+###### Upload
+
+```
+FNDLOAD apps/<$APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct prog_XXDL_CONCURRENT_PROGRAM.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
+```
+
+<br>
  
 ## Request Groups
 | Entity      | Sub-entities, if any |  #   | Download Parameters   |
@@ -183,22 +199,7 @@ FNDLOAD apps/<$APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/afscprof.lct pro
 $FND_TOP/bin/FNDLOAD apps/<$APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afscprof.lct prof_XXDL_PROFILE_OPTION.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
 ```
 
-<br>
 
-## FNDLOAD Concurrent Program
-
-
-###### Download 
-
-```
-FNDLOAD apps/<$APPS_PWD> O Y DOWNLOAD $FND_TOP/patch/115/import/afcpprog.lct prog_XXDL_CONCURRENT_PROGRAM.ldt PROGRAM APPLICATION_SHORT_NAME="XXDL" CONCURRENT_PROGRAM_NAME="XXDL_CONCURRENT_PROGRAM"
-```
-
-###### Upload
-
-```
-FNDLOAD apps/<$APPS_PWD> 0 Y UPLOAD $FND_TOP/patch/115/import/afcpprog.lct prog_XXDL_CONCURRENT_PROGRAM.ldt - WARNING=YES UPLOAD_MODE=REPLACE CUSTOM_MODE=FORCE
-```
 
 <br>
 
