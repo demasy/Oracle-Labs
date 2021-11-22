@@ -23,9 +23,9 @@ This is my recommended naming conventions for the data file name.
  | SEQ       | Type        | Name     | Length | Prefix | Suffix | Example |
  | :-        | :----        |    :----          | :-:    | :---   | :---   | :----   |
  | 1         | **XXX**      |              | -     |  -      |  -      | -|
- | 1         | Program         | XXDL_CONCURRENT_PROGRAM           | -     |  prog_      |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
- | 1         | Request Groups         | XXDL_REPORT_GROUP           | -     |  alr_      |   -     | reqg_XXDL_REPORT_GROUP.ldt |
- | 1         | Alert         | XXDL_ALERT_NAME           | -     |  alr_      |   -     | alr_XXDL_ALERT_NAME.ldt |
+ | 2         | Program         | XXDL_CONCURRENT_PROGRAM           | -     |  prog_      |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
+ | 3         | Request Groups         | XXDL_REPORT_GROUP           | -     |  alr_      |   -     | reqg_XXDL_REPORT_GROUP.ldt |
+ | 4         | Alert         | XXDL_ALERT_NAME           | -     |  alr_      |   -     | alr_XXDL_ALERT_NAME.ldt |
  
  
  
