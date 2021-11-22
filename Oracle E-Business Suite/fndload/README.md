@@ -4,6 +4,16 @@ The Generic Loader (FNDLOAD) is a concurrent program that can move Oracle E-Busi
 
 <br>
 
+
+
+## **FNDLOAD Executable**
+The Generic Loader is a concurrent program named FNDLOAD. The concurrent executable takes the following parameters:
+
+> FNDLOAD apps/pwd 0 Y mode configfile datafile entity [ param ... ]
+
+ <br>
+ 
+
 ## **FNDLOAD**
 
 | Code      | FNDLOAD                           | Notes   |
