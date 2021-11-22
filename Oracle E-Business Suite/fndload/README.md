@@ -21,7 +21,7 @@ The Generic Loader is a concurrent program named FNDLOAD. The concurrent executa
 This is my recommended naming conventions for the data file name.
 
  | SEQ       | Type        | Name     | Length | Prefix | Suffix | Example |
- | :-        | :----        |    :----          | :-:    | :---   | :---   | :----   |
+ | :-:       | :----        |    :----          | :-:    | :---   | :---   | :----   |
  | 1         | **XXX**      |              | -     |  -      |  -      | -|
  | 2         | Program         | XXDL_CONCURRENT_PROGRAM           | -     |  prog_      |   -     | prog_XXDL_CONCURRENT_PROGRAM.ldt |
  | 3         | Request Groups         | XXDL_REPORT_GROUP           | -     |  alr_      |   -     | reqg_XXDL_REPORT_GROUP.ldt |
