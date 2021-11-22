@@ -11,6 +11,22 @@ The Generic Loader (FNDLOAD) is a concurrent program that can move Oracle E-Busi
 | 1         | Alert                   | -       |
 | 2         | Profile Option                   | -       |
 
+<br>
+
+## **Oracle Application Object Library** 
+| Code      | FNDLOAD                           | Notes   |
+| :-:       | :--------                         | :----   |
+| 1         | Concurrent program definitions                   | -       |
+| 2         | Request groups                    | -       |
+| 3         | Lookup types and lookup values                  | -       |
+| 4         | Flexfields setup data             | -       |
+| 5         | Attachments definitions           | -       |
+| 6         | Messages                          | -       |
+| 7         | Security information              | -       |
+ 
+
+
+
 <br> 
 
 
