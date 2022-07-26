@@ -13,19 +13,19 @@ https://www.oracle.com/tools/downloads/sqlcl-downloads.html
 
 <br>
 
-```
+```shell
 sudo java --version
 ```
 
-```
+```shell
 which java
 ```
 
-```
+```shell
 cd /<$FILE_PATH>/sqlcl/bin
 ```
 
-```
+```shell
 ./sql <$USER_NAME>/<$PASSWORD>@<$HOST>:<$PORT>/<$SID>
 ```
 
@@ -33,11 +33,11 @@ cd /<$FILE_PATH>/sqlcl/bin
 
 <br>
 
-```
+```shell
 clear screen
 ```
 
-```
+```shell
 help
 ```
 
